@@ -41,7 +41,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.alyahellohttp.entrypoints=web"
-      - "traefik.http.routers.alyahellohttp.rule=PathPrefix(`/hello`)"
+      - "traefik.http.routers.alyahellohttp.rule=PathPrefix(`/`)"
       - "traefik.http.routers.alyahellohttp.service=alyahelloservice"
       - "traefik.http.services.alyahelloservice.loadbalancer.server.port=8000"
 
